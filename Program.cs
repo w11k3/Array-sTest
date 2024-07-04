@@ -1,11 +1,9 @@
 ﻿public class InitArray
 {
-    public static void Main(string[] args)
+    public static void Main(string[] args)  
     {
-        int[] array; // declare array named array
-
-        // create the space for array and initialize to default zeros
-        array = new int[5]; // 5 int elements
+        // initializer list species the value for each element
+        int[] array = { 32, 27, 64, 18, 95, 14, 90, 70, 60, 37 };
 
         Console.WriteLine("{0}{1,8}", "Index", "Value"); // headings
 
