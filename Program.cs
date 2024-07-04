@@ -2,8 +2,12 @@
 {
     public static void Main(string[] args)  
     {
-        // initializer list species the value for each element
-        int[] array = { 32, 27, 64, 18, 95, 14, 90, 70, 60, 37 };
+        const int ARRAY_LENGTH = 10; // create a named constant
+        int[] array = new int[ARRAY_LENGTH]; // create array
+
+        // calculate value for each array element
+        for (int counter = 0; counter < array.Length; ++counter)
+            array[counter] = 2 + 2 * counter;
 
         Console.WriteLine("{0}{1,8}", "Index", "Value"); // headings
 
